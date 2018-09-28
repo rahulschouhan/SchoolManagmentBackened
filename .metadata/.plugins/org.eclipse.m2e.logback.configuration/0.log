@@ -3541,3 +3541,4 @@ Caused by: org.apache.http.client.HttpResponseException: Authorization Required 
 2018-09-28 14:28:11,891 [Worker-1238: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-09-28 14:28:11,892 [Worker-1238: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-09-28 14:28:11,906 [Worker-1238: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-28 14:28:11,907 [Worker-1238: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\rahul.chouhan\Documents\workspace-sts-3.9.5.RELEASE\SchoolManagmentERP\src\test\resources
