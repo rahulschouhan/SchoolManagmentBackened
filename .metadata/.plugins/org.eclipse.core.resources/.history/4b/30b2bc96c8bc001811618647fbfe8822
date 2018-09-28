@@ -1,0 +1,21 @@
+package com.yash.sm.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.yash.sm.entity.AdminEntity;
+
+@RestController
+public class AdminController {
+
+	
+	@GetMapping("admin/{id}")
+	public ResponseEntity<AdminEntity> getArticleById(@PathVariable("id") Integer id) {
+		Article article = articleService.getArticleById(id);
+		return new ResponseEntity<Article>(article, HttpStatus.OK);
+	}
+
+
+}

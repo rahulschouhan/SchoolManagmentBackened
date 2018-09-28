@@ -1,0 +1,16 @@
+package com.yash.sm;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+import net.shibboleth.utilities.java.support.component.ComponentSupport;
+
+@SpringBootApplication
+@ComponentScan(basePackageClasses=[""])
+public class SchoolManagmentErpApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SchoolManagmentErpApplication.class, args);
+	}
+}

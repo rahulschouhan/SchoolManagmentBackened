@@ -1,0 +1,13 @@
+package com.yash.sm.service;
+
+import com.yash.sm.entity.AdminEntity;
+
+public class AdminServiceImpl implements AdminService {
+
+	@Override
+	public AdminEntity getAdminDetails(Long adminId) {
+		
+		return null;
+	}
+
+}

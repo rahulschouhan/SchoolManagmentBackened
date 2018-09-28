@@ -1,0 +1,20 @@
+package com.yash.sm.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.yash.sm.dao.AdminDao;
+import com.yash.sm.entity.AdminEntity;
+@Service
+public class AdminServiceImpl implements AdminService {
+
+	@Autowired
+	AdminDao admindao;
+	
+	@Override
+	public AdminEntity getAdminDetails(Long adminId) {
+		
+		return admindao.getAdminDetailsById(adminId);
+	}
+
+}

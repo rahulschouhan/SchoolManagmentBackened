@@ -1,0 +1,10 @@
+package com.yash.sm.dao;
+
+import com.yash.sm.entity.AdminEntity;
+
+public interface AdminInterface {
+	
+public AdminEntity getAdminDetails(AdminEntity adminEntity) ;
+
+
+}

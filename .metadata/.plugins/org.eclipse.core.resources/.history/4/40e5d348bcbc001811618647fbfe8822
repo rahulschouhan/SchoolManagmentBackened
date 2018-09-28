@@ -1,0 +1,19 @@
+package com.yash.sm.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import com.yash.sm.entity.AdminEntity;
+
+public class AdminDaoImp implements AdminDao {
+
+	@PersistenceContext	
+	private EntityManager entityManager;
+	
+	@Override
+	public AdminEntity getAdminDetails(AdminEntity adminEntity) {
+		
+		return null;
+	}
+
+}

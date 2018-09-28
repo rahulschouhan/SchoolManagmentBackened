@@ -1,0 +1,5 @@
+package com.yash.sm.entity;
+
+public class AdminEntity {
+
+}

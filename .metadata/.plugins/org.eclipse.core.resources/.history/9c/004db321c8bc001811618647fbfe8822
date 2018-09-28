@@ -1,0 +1,15 @@
+package com.yash.sm.service;
+
+import org.springframework.stereotype.Service;
+
+import com.yash.sm.entity.AdminEntity;
+@Service
+public class AdminServiceImpl implements AdminService {
+
+	@Override
+	public AdminEntity getAdminDetails(Long adminId) {
+		
+		return null;
+	}
+
+}

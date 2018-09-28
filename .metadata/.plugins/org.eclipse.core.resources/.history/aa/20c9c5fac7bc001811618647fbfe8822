@@ -1,0 +1,10 @@
+package com.yash.sm.service;
+
+import com.yash.sm.entity.AdminEntity;
+
+public interface AdminService {
+
+public AdminEntity getAdminDetails(Lond adminId);	
+	
+
+}
