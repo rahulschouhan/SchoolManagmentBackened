@@ -19,14 +19,4 @@ public class AdminServiceImpl implements AdminService {
 		return admindao.getAdminDetailsById(adminId);
 	}
 
-	@Override
-	public boolean addTeachers(TeacherEntity entity) {
-		return admindao.addTeachers(entity);
-	}
-
-	@Override
-	public List<TeacherEntity> getTeachers() {
-		return admindao.getTeachers();
-	}
-
 }

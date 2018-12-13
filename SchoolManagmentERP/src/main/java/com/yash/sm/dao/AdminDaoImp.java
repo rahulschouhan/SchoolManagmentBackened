@@ -23,26 +23,5 @@ public class AdminDaoImp implements AdminDao {
 	return adminEntity;
 	}
 
-	@Override
-	public boolean addTeachers(TeacherEntity entity) {
-		try {
-
-		entityManager.persist(entity);
-
-		return true;
-		}
-		catch (Exception e) {
-		e.printStackTrace();
-		return false;
-		}
-	}
-
-	@Override
-	public List<TeacherEntity> getTeachers() {
 	
-		Query query=  entityManager.createQuery(TEACHERS_QUERY);
-	     List<TeacherEntity>entities= 	query.getResultList();
-		return entities;
-	}
-
 }

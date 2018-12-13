@@ -8,8 +8,6 @@ import com.yash.sm.entity.TeacherEntity;
 public interface AdminDao {
 	
 public AdminEntity getAdminDetailsById(Long adminEntity) ;
-public boolean addTeachers(TeacherEntity entity);
-public List<TeacherEntity> getTeachers();
 
 
 

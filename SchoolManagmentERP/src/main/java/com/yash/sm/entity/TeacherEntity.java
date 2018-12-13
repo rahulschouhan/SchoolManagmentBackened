@@ -2,12 +2,14 @@ package com.yash.sm.entity;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -45,6 +47,18 @@ private Date doj ;
 
 @Column()
 private Date dob ;
+
+@OneToMany(mappedBy="aId")
+private List<AttandanceEntity> listA;
+
+public List<AttandanceEntity> getListA() {
+	return listA;
+	
+}
+
+public void setListA(List<AttandanceEntity> listA) {
+	this.listA = listA;
+}
 
 public Long gettId() {
 	return tId;
@@ -127,6 +141,7 @@ public int hashCode() {
 	result = prime * result + ((doj == null) ? 0 : doj.hashCode());
 	result = prime * result + ((fName == null) ? 0 : fName.hashCode());
 	result = prime * result + ((lName == null) ? 0 : lName.hashCode());
+	result = prime * result + ((listA == null) ? 0 : listA.hashCode());
 	result = prime * result + ((mobile == null) ? 0 : mobile.hashCode());
 	result = prime * result + ((subject == null) ? 0 : subject.hashCode());
 	result = prime * result + ((tEmailId == null) ? 0 : tEmailId.hashCode());
@@ -167,6 +182,11 @@ public boolean equals(Object obj) {
 		if (other.lName != null)
 			return false;
 	} else if (!lName.equals(other.lName))
+		return false;
+	if (listA == null) {
+		if (other.listA != null)
+			return false;
+	} else if (!listA.equals(other.listA))
 		return false;
 	if (mobile == null) {
 		if (other.mobile != null)
