@@ -10,7 +10,7 @@ public class SchoolManagmentErpApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SchoolManagmentErpApplication.class, args);
-
+System.out.println("gfr");
 
 	}
 }
